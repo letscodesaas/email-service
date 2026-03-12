@@ -1,1 +1,2 @@
-pub mod handler;
+pub mod health_handler;
+pub mod newsletter_handler;
