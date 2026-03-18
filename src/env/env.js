@@ -14,6 +14,27 @@ const _ENV = {
     : (() => {
         throw new Error("DB is Requried");
       })(),
+
+  SMTP_USER: process.env.SMTP_USER
+    ? process.env.SMTP_USER
+    : (() => {
+        throw new Error("SMPT User is Requried");
+      })(),
+  SMTP_PASS: process.env.SMTP_PASS
+    ? process.env.SMTP_PASS
+    : (() => {
+        throw new Error("SMTP_PASS is Requried");
+      })(),
+  SMTP_HOST: process.env.SMTP_HOST
+    ? process.env.SMTP_HOST
+    : (() => {
+        throw new Error("SMTP_HOST is Requried");
+      })(),
+  SMTP_PORT: process.env.SMTP_PORT
+    ? process.env.SMTP_PORT
+    : (() => {
+        throw new Error("SMTP_PORT is Requried");
+      })(),
 };
 
 export const ENV = Object.freeze(_ENV);
