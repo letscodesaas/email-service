@@ -94,4 +94,4 @@ Server responds with:
 
 - CORS is enabled for the Express app.
 - WebSocket client sessions are tracked in-memory.
-- MongoDB database name is currently hardcoded as `test` in `src/models/subscriber.models.js`.
+
